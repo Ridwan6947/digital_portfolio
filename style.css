@@ -258,6 +258,9 @@ form>input{
 .services .box-container .box:hover{
     background: var(--black);
 }
+.services .box-container .box li:hover {
+    color: white;
+}
 
 .services .box-container .box:hover h3{
     color:#fff;
