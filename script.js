@@ -37,3 +37,13 @@ function redirectToleeps(){
 
   window.open(leeps , '_blank')
 }
+function redirectTocipherguard(){
+  var cg = 'https://github.com/Ridwan6947/Password-checker-final-Project-'
+
+  window.open(cg,'_blank')
+}
+function redirectTodd(){
+  var dd = 'https://github.com/Ridwan6947/Drowsiness-Detection'
+
+  window.open(dd,'_blank')
+}
