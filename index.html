@@ -40,15 +40,18 @@
     
 
 
-<section class="home" id="home">
+<section class="home" id="home" >
     <div class="content">
-        <div class="typing-effect" id="typing"></div>
+        <div style="font-size: 3rem;" class="typing-effect" id="typing"></div>
         <div>
-            <h3 style="font-size: 100px; text-align: left;">Syed Ridwan Ahmad</h3>
+            <div style="display: flex;">
+                <h3 style="font-size:100px; text-align: left; align-items: center;">Syed Ridwan Ahmad</h3>
+                <img src="ridwan.png" alt="" style="width: fit-content;"/>
+            </div>
             <button class="btn home-parallax" onclick="redirectToGoogleDrive()">Download CV</button>
         </div>
     </div>
-    <img src="ridwan.png" alt="" style="width: 200px;">
+   
 </section>
 
 <section class="icons-container">
@@ -169,8 +172,8 @@
 
     <h1 class="heading"><span>contact</span> Me</h1>
 
-    <div class="contact">
-        <form onsubmit="sendEmail(); reset(); return false;">
+    <div class="contact" style="display: flex;width: 100vw;justify-content: center ; align-items: center; ">
+        <form style="display: flex;gap: 15px; flex-direction: column; " onsubmit="sendEmail(); reset(); return false;">
             <input type="text" id="name" placeholder="Your Name" required>
             <input type="email" id="email" placeholder="Your Email" required>
             <input type="text" id="phone" placeholder="Your Number" required>

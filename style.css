@@ -136,6 +136,12 @@ section{
     font-size: 7.5vw;
     text-transform: uppercase;
 }
+form>input{
+    border:2px rgb(174, 171, 171) solid;
+    width: 30vw;
+    padding: 10px;
+    border-radius: 18px;
+}
 .contact h1{
     padding: 20px;
     text-align: center;
