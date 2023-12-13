@@ -3,17 +3,24 @@ document.addEventListener('DOMContentLoaded', function () {
   const typingElement = document.getElementById('typing');
 
   function typeText(index) {
-      typingElement.textContent = textToType.slice(0, index);
+    typingElement.textContent = textToType.slice(0, index);
 
-      if (index < textToType.length) {
-          setTimeout(function () {
-              typeText(index + 1);
-          }, 100); // Adjust the typing speed here (milliseconds)
-      }
+    if (index < textToType.length) {
+      setTimeout(function () {
+        typeText(index + 1);
+      }, 80); // Adjust the typing speed here (milliseconds)
+    } else {
+      // Typing has reached the end, restart after a delay
+      setTimeout(function () {
+        typeText(0);
+      }, 2000); // Adjust the delay before restarting (milliseconds)
+    }
   }
 
+  // Start the typing animation
   typeText(0);
 });
+
 function redirectToGoogleDrive() {
   // Replace 'YOUR_GOOGLE_DRIVE_LINK' with your actual Google Drive link
   var googleDriveLink = 'https://drive.google.com/file/d/16zb7TetVlVqe44J4MvXP4UxRa_drbgoT/view?usp=drive_link';
