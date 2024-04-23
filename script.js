@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function redirectToGoogleDrive() {
   // Replace 'YOUR_GOOGLE_DRIVE_LINK' with your actual Google Drive link
-  var googleDriveLink = 'https://drive.google.com/file/d/16zb7TetVlVqe44J4MvXP4UxRa_drbgoT/view?usp=drive_link';
+  var googleDriveLink = 'https://drive.google.com/file/d/1lZER0QgKi1uFhU534QLJuKHWwg4XF96F/view?usp=drive_link';
   
   // Open the link in a new tab
   window.open(googleDriveLink, '_blank');
